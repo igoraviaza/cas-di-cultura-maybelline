@@ -91,40 +91,30 @@ header.hero::after{
   text-shadow: 0 2px 0 rgba(0,0,0,0.05);
 }
 
-/* Logo lockup: icon row + CAS DI, then CULTURA */
-.logo-lockup{ display:inline-flex; flex-direction:column; align-items:center; gap: 0.35rem; }
-.logo-top{ display:flex; align-items:center; justify-content:center; gap: clamp(0.35rem, 1.2vw, 0.7rem); flex-wrap: wrap; }
-.logo-icons{ display:flex; align-items:center; gap: clamp(0.15rem, 0.8vw, 0.45rem); }
-.logo-icons svg{ width: clamp(28px, 5vw, 42px); height: clamp(28px, 5vw, 42px); display:block; }
-.logo-casdi{
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.32em;
-  font-size: clamp(1.3rem, 4.2vw, 2.1rem);
-  color: #23201C;
-  padding-left: 0.32em;
-}
-.logo-cultura{
+/* Logo lockup: icon row, then CAS DI CULTURA on one line, uniform styling */
+.logo-lockup{ display:inline-flex; flex-direction:column; align-items:center; gap: 0.55rem; }
+.logo-icons{ display:flex; align-items:center; justify-content:center; gap: clamp(0.15rem, 0.8vw, 0.45rem); flex-wrap: wrap; }
+.logo-icons svg{ width: clamp(28px, 4.6vw, 42px); height: clamp(28px, 4.6vw, 42px); display:block; }
+.logo-name{
   font-family: 'Jost', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.28em;
-  font-size: clamp(2.6rem, 10vw, 4.6rem);
+  letter-spacing: 0.14em;
+  font-size: clamp(1.8rem, 6.5vw, 3.6rem);
   color: #7E2C82;
   line-height: 1;
-  padding-left: 0.28em;
   text-shadow: 0 2px 0 rgba(255,255,255,0.15);
 }
 
 .hero .full-name{
   font-family: 'Jost', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.06em;
-  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.65rem);
   color: #FFF8ED;
-  margin-top: 1.3rem;
+  margin-top: 0.7rem;
 }
 .hero .subline{
-  margin-top: 0.9rem;
+  margin-top: 1.7rem;
   font-family: 'Source Serif 4', serif;
   font-style: italic;
   color: #FFF3E2;
@@ -143,7 +133,7 @@ main{
   border-radius: 6px;
   box-shadow: 0 30px 60px -20px rgba(20, 30, 25, 0.35), 0 1px 0 var(--paper-edge);
   padding: clamp(1.75rem, 5vw, 3.5rem) clamp(1.5rem, 6vw, 4rem);
-  margin-top: -2.75rem;
+  margin-top: -3.75rem;
   position: relative;
 }
 
